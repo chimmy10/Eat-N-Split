@@ -10,7 +10,7 @@ function Display() {
 	return (
 		<div className="w-80 sm:w-96 md:w-[500px] lg:w-96">
 			<h1 className="mb-4 text-3xl font-bold text-center text-blue-900">
-				Welcome to Eat and Split!
+				Welcome to <hr></hr>Eat and Split!
 			</h1>
 			<p className="mb-6 text-lg text-center text-blue-700">
 				Manage your expenses and split bills with friends easily.
@@ -20,8 +20,12 @@ function Display() {
 					className="flex items-center justify-between p-2 mb-3 bg-pink-200 rounded-lg"
 					key={s.id}
 				>
-					<div className="flex gap-5">
-						<img className="rounded-full" src={s.image} alt="something" />
+					<div className="flex items-center gap-5">
+						<img
+							className="object-cover w-12 h-12 rounded-full"
+							src={s.image}
+							alt="something"
+						/>
 						<div>
 							<p className=" text-[16px] font-bold">
 								{s.name.charAt(0).toUpperCase() + s.name.slice(1).toLowerCase()}
